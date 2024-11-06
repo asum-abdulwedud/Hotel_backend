@@ -1,0 +1,42 @@
+POST  http://localhost:4000/register
+Content-Type: application/json
+
+{
+    "first_name":"abdu",
+    "last_name":"feta",
+    "email":"Asum@gmail.com",
+    "phone_number":"0993477460",
+    "password": "asum1234"
+}
+
+###
+POST  http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "email":"Asum@gmail.com",
+    "password": "asum1234"
+}
+
+###
+POST  http://localhost:4000/create-room
+Content-Type: application/json
+
+{
+   "code":"A201",
+   "price":"1500",
+   "level":"3",
+   "Type":"2 bedroom" 
+}
+
+###
+POST  http://localhost:4000/reserv
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.MQ.6BtvM4bxbI62YXUAFhwegrv9nkRU-tva8wMchU8ccFI
+
+{
+   "duration":"4",
+   "date":"02-02-2024",
+   "roomId":"1"
+   
+}
